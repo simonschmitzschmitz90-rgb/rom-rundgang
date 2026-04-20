@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wohnhaus der einfachen Bevölkerung</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Wohnhaus der einfachen Bevölkerung</h1>
+    <p>Insula – mehrstöckiges Mietshaus</p>
+  </header>
+
+  <main>
+    <section class="card station-layout">
+      <div>
+        <div class="hero-note">
+          <strong>Arbeitsauftrag:</strong> Schaut auf Fenster und Stockwerke. Was sagt euch das über das Leben vieler Menschen in Rom?
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Kurze Hinweise</h2>
+          <ul class="info-list">
+            <li>Viele Menschen wohnten in mehrstöckigen Mietshäusern.</li>
+<li>Diese Häuser nennt man Insulae.</li>
+<li>Sie waren enger und einfacher als Villen reicher Römer.</li>
+          </ul>
+          <div class="meta">
+            <span>Mietshaus</span>
+<span>Viele Wohnungen</span>
+<span>Alltagsleben in der Stadt</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Für echtes AR später</h2>
+          <p class="small">Diese Seite enthält bereits ein direkt nutzbares 3D-Modell im Browser. Wenn du später echtes iPad-AR ergänzen möchtest, kannst du zusätzlich eine GLB- oder USDZ-Datei einbauen.</p>
+          <p class="small">Empfohlener Dateiname: <span class="code">wohnhaus.glb</span> oder <span class="code">wohnhaus.usdz</span></p>
+          <a class="btn" href="index.html">Zur Stationsübersicht</a>
+        </div>
+      </div>
+
+      <div class="viewer" id="viewer">
+        <div class="viewer-badge">3D-Modell</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Römische Schnitzeljagd – Station: Wohnhaus der einfachen Bevölkerung
+  </footer>
+
+  <script type="module">
+    import { initModel } from './rom-models.js';
+    initModel('viewer', 'wohnhaus');
+  </script>
+</body>
+</html>

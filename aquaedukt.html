@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aquädukt</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Aquädukt</h1>
+    <p>Wasserleitung für die Stadt</p>
+  </header>
+
+  <main>
+    <section class="card station-layout">
+      <div>
+        <div class="hero-note">
+          <strong>Arbeitsauftrag:</strong> Untersucht die Bogenreihe. Warum war so ein Bauwerk für Rom lebenswichtig?
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Kurze Hinweise</h2>
+          <ul class="info-list">
+            <li>Aquädukte brachten Wasser aus entfernten Quellen in die Stadt.</li>
+<li>Die Bogenform war stabil und praktisch.</li>
+<li>Wasser wurde für Brunnen, Häuser und Thermen gebraucht.</li>
+          </ul>
+          <div class="meta">
+            <span>Wassertransport</span>
+<span>Bogenkonstruktion</span>
+<span>Wichtig für Versorgung</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Für echtes AR später</h2>
+          <p class="small">Diese Seite enthält bereits ein direkt nutzbares 3D-Modell im Browser. Wenn du später echtes iPad-AR ergänzen möchtest, kannst du zusätzlich eine GLB- oder USDZ-Datei einbauen.</p>
+          <p class="small">Empfohlener Dateiname: <span class="code">aquaedukt.glb</span> oder <span class="code">aquaedukt.usdz</span></p>
+          <a class="btn" href="index.html">Zur Stationsübersicht</a>
+        </div>
+      </div>
+
+      <div class="viewer" id="viewer">
+        <div class="viewer-badge">3D-Modell</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Römische Schnitzeljagd – Station: Aquädukt
+  </footer>
+
+  <script type="module">
+    import { initModel } from './rom-models.js';
+    initModel('viewer', 'aquaedukt');
+  </script>
+</body>
+</html>
